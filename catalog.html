@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог товаров Gllacy</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header>
-  		<nav>
-  			<a href="index.html"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
-  			<ul>
-  				<li><a href="#">Каталог</a>
-	              <ul>
+<body class="page-body">
+	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo" href="index.html"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
+  			<ul class="site-navigation">
+  				<li><a class="active" href="#">Каталог</a>
+	              <ul class="dropdown-list">
 	                <li><a href="#">Новинки</a></li>
 	                <li><a href="#">Сливочное</a></li>
 	                <li><a href="#">Щербеты</a></li>
@@ -22,27 +24,27 @@
   				<li><a href="index.html#about">О компании</a></li>
   			</ul>
         	<ul>
-	  			<li><a href="#">Поиск</a></li>
-	  			<li><a href="#">Вход</a></li>
-	  			<li><a href="#">Корзина <span>2 товара</span></a></li>
+	  			<li><a class="search-link" href="#">Поиск</a></li>
+	  			<li><a class="login-link" href="#">Вход</a></li>
+	  			<li><a class="basket-link basket-active" href="#">Корзина <span>2 товара</span></a></li>
         	</ul>
   		</nav>
       <p>c 10 до 20, ежедневно</p>
-      <a href="tel:88124502525">8 812 450-25-25</a>
+      <a class="header-phone" href="tel:88124502525">8 812 450-25-25</a>
   	</header>
 	<main>
 		<h1>Сливочное мороженое</h1>
-		<ul>
+		<ul class="breadcrumbs-list">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
-			<li>Сливочное</li>
+			<li class="breadcrumbs-current">Сливочное</li>
 		</ul>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
-			<form action="#" method="get">
+			<form class="filter-form" action="#" method="get">
 				<fieldset>
 					<legend>Сортировка:</legend>
-					<select name="sorting" id="sorting">
+					<select class="filter-option" name="sorting" id="sorting">
 						<option value="popular">по популярности</option>
 						<option value="expensive-first">сначала недорогие</option>
 						<option value="cheep-first">сначала дорогие</option>
@@ -51,12 +53,12 @@
 				</fieldset>
 				<fieldset>
 					<legend>Цена: 100 ₽ – 500 ₽</legend>
-					<input type="range" min="100" max="500" step="5" value="300">
+					<input class="filter-option" type="range" min="100" max="500" step="5" value="300">
 				</fieldset>
 				<fieldset>
 					<legend>Жирность:</legend>
 					<ul>
-						<li>
+						<li class="filter-option filter-radio">
 							<input type="radio" id="zero" name="zero">
 							<label for="zero">0%</label>
 						</li>
@@ -177,28 +179,31 @@
        </ul>
 		</section>
 	</main>
-	<footer>
-   		<section class="social_list">
-    		<h2 class="visually-hidden">Социальные сети</h2>
-		    <ul>
-		      <li><a href="#">Facebook</a></li>
-		      <li><a href="#">ВКонтакте</a></li>
-		      <li><a href="#">Instagram</a></li>
-		      <li><a href="#">Twitter</a></li>
-		    </ul>
-     	</section> 
-     	<section class="supply">
-       		<h2>Для поставщиков</h2>
-		    <ul>
-		      <li><a href="#">О производстве</a></li>
-		      <li><a href="#">Наши документы</a></li>
-		      <li><a href="#">Экологические стандарты</a></li>
-		    </ul>
-     	</section>
-     	<div class="copyright">
-      		<a href="htmlacademy.ru"><img src="img/logo/logo-academy.svg" alt="Логотип HTMLacademy" width="108" height="39"></a>
-      	 	<p>Сделано в HTML Academy © 2019</p>
-     	</div>
-  </footer>
+<footer class="main-footer">
+
+	 <section class="social">
+		<h2 class="visually-hidden">Социальные сети</h2>
+		<ul class="social-list">
+			<li><a class="social-btn" href="#">Facebook</a></li>
+			<li><a class="social-btn" href="#">ВКонтакте</a></li>
+			<li><a class="social-btn" href="#">Instagram</a></li>
+			<li><a class="social-btn" href="#">Twitter</a></li>
+		</ul>
+		 </section> 
+
+		 <section class="supply">
+			 <h2>Для поставщиков</h2>
+			 <ul class="supply-list">
+				 <li class="supply-item"><a href="#">О производстве</a></li>
+				 <li class="supply-item"><a href="#">Наши документы</a></li>
+				 <li class="supply-item"><a href="#">Экологические стандарты</a></li>
+			 </ul>
+		 </section>
+
+		 <div class="copyright">
+			<a href="htmlacademy.ru"><img src="img/logo/logo-academy.svg" alt="Логотип HTMLacademy" width="108" height="39"></a>
+			 <p>Сделано в HTML Academy © 2019</p>
+		 </div>
+	</footer>
 </body>
 </html>
