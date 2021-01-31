@@ -9,29 +9,30 @@
 		<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
 		<link rel="apple-touch-icon" href="img/favicons/apple.png">
 		<link rel="manifest" href="manifest.webmanifest">
-
 		</head>
+
 	<body class="page-body">
+
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="header-logo"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
 				<ul class="site-navigation">
-					<li><a class="navigation-link" href="catalog.html">Каталог</a>
+					<li><a class="navigation-link navigation-catalog" href="catalog.html">Каталог</a>
 						<ul class="dropdown-list">
-							<li><a href="#">Новинки</a></li>
-							<li><a href="catalog.html">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
+							<li class="dropdown-item dropdown-underline"><a class="dropdown-link dropdown-active" href="#">Новинки</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="catalog.html">Сливочное</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="#">Щербеты</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="#">Фруктовый лед</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="#">Мелорин</a></li>
 						</ul>
 					</li>
 					<li><a class="navigation-link" href="#">Доставка и оплата</a></li>
 					<li><a class="navigation-link" href="#about">О компании</a></li>
 				</ul>
 				<ul class="user-navigation">
-				<li><a href="#" class="search-link">Поиск</a></li>
-				<li><a href="#" class="login-link">Вход</a></li>
-				<li><a href="#" class="basket-link">Корзина <span>Пусто</span></a></li>
+				<li><a href="#" class="user-link">Поиск</a></li>
+				<li><a href="#" class="user-link">Вход</a></li>
+				<li><a href="#" class="user-link">Корзина <span>Пусто</span></a></li>
 				</ul>
 			</nav>
 			<div class="navigation-contacts">
@@ -139,7 +140,7 @@
 				<div class="mailing-wrapper">
 				<p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 				<form class="mailing-form" action="#" method="post">
-					<label for="email"><input type="email" id="email" name="mail" placeholder="email@example.com"></label>
+					<label for="email"><input class="input-style"  type="email" id="email" name="mail" placeholder="email@example.com"></label>
 					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</div>
@@ -185,9 +186,9 @@
 			 <h2><span><svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8 0a4.1 4.1 0 00-3.3 1.7A4.1 4.1 0 004.2 0 4.1 4.1 0 000 4c0 3.2 7.5 9 7.5 9S15 7.2 15 4a4.1 4.1 0 00-4.2-4z" fill="#fff"/></svg></span>
 			 Для поставщиков</h2>
 			 <ul class="supply-list">
-				 <li class="supply-item"><a href="#">О производстве</a></li>
-				 <li class="supply-item"><a href="#">Наши документы</a></li>
-				 <li class="supply-item"><a href="#">Экологические стандарты</a></li>
+				 <li class="supply-item"><a class="link" href="#">О производстве</a></li>
+				 <li class="supply-item"><a class="link" href="#">Наши документы</a></li>
+				 <li class="supply-item"><a class="link" href="#">Экологические стандарты</a></li>
 			 </ul>
 		 </section>
 
@@ -202,11 +203,11 @@
 			<form class="login-form" action="#" method="post">
 				<p>
 					<label for="login-login"></label>
-					<input type="email" id="login-login" name="login" placeholder="email@example.com">
+					<input class="input-style" type="email" id="login-login" name="login" placeholder="email@example.com">
 				</p>
 				<p>
 					<label for="login-password"></label>
-					<input type="password" id="login-password" name="password" placeholder="......">
+					<input class="input-style" type="password" id="login-password" name="password" placeholder="......">
 				</p>
 				<button class="btn btn-login" type="submit">Войти</button>
 				<div class="link-modal-login">
@@ -220,7 +221,7 @@
 			<h2 class="visually-hidden">Поиск</h2>
 			<form class="search-form" action="#"  method="post">
 				<label for="search"></label>
-				<input type="text" id="search" name="search" placeholder="Крем-брюле">
+				<input class="input-style" type="text" id="search" name="search" placeholder="Крем-брюле">
 			</form>
 		</section>
 
@@ -230,14 +231,14 @@
 			<form  class="feedback-form" action="#" method="post">
 				<p>
 					<label for="feedback-name"></label>
-					<input type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия"></p>
+					<input class="input-style" type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия"></p>
 				<p>
 					<label for="feedback-email"></label>
-					<input type="email" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+					<input class="input-style" type="email" id="feedback-email" name="feedback-email" placeholder="email@example.com">
 				</p>
 				<p>
 					<label for="feedback-text"></label>
-					<textarea name="feedback-text" id="feedback-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+					<textarea class="textarea-style" name="feedback-text" id="feedback-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 				</p>
 				<button class="btn feedback-btn" type="submit">Отправить</button>
 			</form>

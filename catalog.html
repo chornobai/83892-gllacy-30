@@ -4,47 +4,52 @@
 	<meta charset="UTF-8">
 	<title>Каталог товаров Gllacy</title>
 	<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-body">
-	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a class="main-header-logo" href="index.html"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
-  			<ul class="site-navigation">
-  				<li><a class="active" href="#">Каталог</a>
-	              <ul class="dropdown-list">
-	                <li><a href="#">Новинки</a></li>
-	                <li><a href="#">Сливочное</a></li>
-	                <li><a href="#">Щербеты</a></li>
-	                <li><a href="#">Фруктовый лед</a></li>
-	                <li><a href="#">Мелорин</a></li>
-	              </ul>
-          		</li>
-  				<li><a href="#">Доставка и оплата</a></li>
-  				<li><a href="index.html#about">О компании</a></li>
-  			</ul>
-        	<ul>
-	  			<li><a class="search-link" href="#">Поиск</a></li>
-	  			<li><a class="login-link" href="#">Вход</a></li>
-	  			<li><a class="basket-link basket-active" href="#">Корзина <span>2 товара</span></a></li>
-        	</ul>
-  		</nav>
-      <p>c 10 до 20, ежедневно</p>
-      <a class="header-phone" href="tel:88124502525">8 812 450-25-25</a>
-  	</header>
+	
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="header-logo" href="index.html"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
+				<ul class="site-navigation">
+					<li><a class="navigation-catalog active-link" href="#">Каталог</a>
+						<ul class="dropdown-list">
+							<li class="dropdown-item dropdown-underline"><a class="dropdown-link dropdown-active" href="#">Новинки</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="catalog.html">Сливочное</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="#">Щербеты</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="#">Фруктовый лед</a></li>
+							<li class="dropdown-item"><a class="dropdown-link" href="#">Мелорин</a></li>
+						</ul>
+					</li>
+					<li><a class="navigation-link" href="#">Доставка и оплата</a></li>
+					<li><a class="navigation-link" href="index.html#about">О компании</a></li>
+				</ul>
+				<ul class="user-navigation">
+				<li><a href="#" class="user-link">Поиск</a></li>
+				<li><a href="#" class="user-link">Вход</a></li>
+				<li><a class="user-link basket-active" href="#">Корзина <span>2 товара</span></a></li>
+				</ul>
+			</nav>
+			<div class="navigation-contacts">
+			<p>c 10 до 20, ежедневно</p>
+			<a class="link header-phone" href="tel:88124502525">8 812 450-25-25</a>
+		</div>
+		</header>
 	<main>
 		<h1>Сливочное мороженое</h1>
 		<ul class="breadcrumbs-list">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="#">Каталог</a></li>
+			<li><a class="link" href="index.html">Главная</a></li>
+			<li><a class="link" href="#">Каталог</a></li>
 			<li class="breadcrumbs-current">Сливочное</li>
 		</ul>
+		
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
 			<form class="filter-form" action="#" method="get">
 				<fieldset>
 					<legend>Сортировка:</legend>
-					<select class="filter-option" name="sorting" id="sorting">
+					<select class="select-filter" name="sorting" id="sorting">
 						<option value="popular">по популярности</option>
 						<option value="expensive-first">сначала недорогие</option>
 						<option value="cheep-first">сначала дорогие</option>
@@ -53,12 +58,12 @@
 				</fieldset>
 				<fieldset>
 					<legend>Цена: 100 ₽ – 500 ₽</legend>
-					<input class="filter-option" type="range" min="100" max="500" step="5" value="300">
+					<input type="range" class="price-filter"  min="100" max="500" step="5" value="300">
 				</fieldset>
 				<fieldset>
 					<legend>Жирность:</legend>
-					<ul>
-						<li class="filter-option filter-radio">
+					<ul class="filter-radio">
+						<li class="">
 							<input type="radio" id="zero" name="zero">
 							<label for="zero">0%</label>
 						</li>
@@ -78,7 +83,7 @@
 				</fieldset>	
 				<fieldset>
 					<legend>Наполнители:</legend>
-					<ul>
+					<ul class="filter-checkbox">
 						<li>
 							<input type="checkbox" id="choco-filler" name="choco" checked>
 							<label for="choco-filler">шоколадные</label>
@@ -101,107 +106,117 @@
 						</li>
 					</ul>			
 				</fieldset>
-				<button type="submit">Применить</button>
+				<button class="filter-button" type="submit">Применить</button>
 			</form>
 		</section>
-		<section class="filtered_list">
+
+		<section class="filtered">
 			<h2 class="visually-hidden">Список сливочного мороженого Глейси</h2>
-			<ul>
-         		<li>
-		            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-		            <img src="img/products_round_shape/1_orange-citrus.jpg" alt="Цитрусовое мороженое" width="267" height="267">
-		            <p><span>310 ₽</span>/кг</p>
-          		</li>
-		         <li>
-		            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-		            <img src="img/products_round_shape/2_cofee.jpg" alt="Кофейное мороженое" width="267" height="267">
-		            <p><span>380 ₽</span>/кг</p>    
-		        </li>
-		         <li>
-		            <h3><a href="#">Сливочно-клубничное  с присыпкой из белого шоколада</a></h3>
-		            <img src="img/products_round_shape/3_strawberry-white-top.jpg" alt="Клубничное мороженое" width="267" height="267">
-		            <p><span>355 ₽</span>/кг</p>        
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочное крем-брюле  с карамельной подливкой</a></h3>
-		            <img src="img/products_round_shape/4_creme-brulee.jpg" alt="Мороженое крем-брюле" width="267" height="267">
-		            <p><span>415 ₽</span>/кг</p>          
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочное с брусничным джемом</a></h3>
-		            <img src="img/products_round_shape/5_lingoberry.jpg" alt="Брусничное мороженое" width="267" height="267">
-		            <p><span>325 ₽</span>/кг</p>
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
-		            <img src="img/products_round_shape/6_blueberry.jpg" alt="Черничное мороженое" width="267" height="267">
-		            <p><span>410 ₽</span>/кг</p>    
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
-		            <img src="img/products_round_shape/7_limone.jpg" alt="Лимонно-карамельное мороженое" width="267" height="267">
-		            <p><span>315 ₽</span>/кг</p>        
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
-		            <img src="img/products_round_shape/8_choco-top.jpg" alt="Мороженое с шоколадной стружкой" width="267" height="267">
-		            <p><span>320 ₽</span>/кг</p>          
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
-		            <img src="img/products_round_shape/9_vanilla_choco.jpg" alt="Ванильное мороженое" width="267" height="267">
-		            <p><span>440 ₽</span>/кг</p>
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
-		            <img src="img/products_round_shape/10_menthol.jpg" alt="Ментоловое мороженое" width="267" height="267">
-		            <p><span>435 ₽</span>/кг</p>    
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
-		            <img src="img/products_round_shape/11_oreo.jpg" alt="Мороженое с кусочками черного шоколада" width="267" height="267">
-		            <p><span>355 ₽</span>/кг</p>        
-		        </li>
-		        <li>
-		            <h3><a href="#">Сливочное с мятным сиропом</a></h3>
-		            <img src="img/products_round_shape/12_mint.jpg" alt="Мятное мороженое" width="267" height="267">
-		            <p><span>420 ₽</span>/кг</p>          
-		        </li>
-       </ul>
-       <ul>
-       	<li>Назад</li>
-       	<li>1</li>
-       	<li><a href="#">2</a></li>
-       	<li><a href="#">3</a></li>
-       	<li><a href="#">4</a></li>
-       	<li><a href="#">5</a></li>
-       	<li><a href="#">Вперёд</a></li>
-       </ul>
+			<ul class="filtered-list">
+				<li class="filtered-item">
+						<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+						<img src="img/products_round_shape/1_orange-citrus.jpg" alt="Цитрусовое мороженое" width="267" height="267">
+						<p><span>310 ₽</span>/кг</p>
+					</li>
+				 <li class="filtered-item">
+						<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+						<img src="img/products_round_shape/2_cofee.jpg" alt="Кофейное мороженое" width="267" height="267">
+						<p><span>380 ₽</span>/кг</p>    
+						</li>
+				 <li class="filtered-item">
+						<h3><a href="#">Сливочно-клубничное  с присыпкой из белого шоколада</a></h3>
+						<img src="img/products_round_shape/3_strawberry-white-top.jpg" alt="Клубничное мороженое" width="267" height="267">
+						<p><span>355 ₽</span>/кг</p>        
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочное крем-брюле  с карамельной подливкой</a></h3>
+						<img src="img/products_round_shape/4_creme-brulee.jpg" alt="Мороженое крем-брюле" width="267" height="267">
+						<p><span>415 ₽</span>/кг</p>          
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочное с брусничным джемом</a></h3>
+						<img src="img/products_round_shape/5_lingoberry.jpg" alt="Брусничное мороженое" width="267" height="267">
+						<p><span>325 ₽</span>/кг</p>
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+						<img src="img/products_round_shape/6_blueberry.jpg" alt="Черничное мороженое" width="267" height="267">
+						<p><span>410 ₽</span>/кг</p>    
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+						<img src="img/products_round_shape/7_limone.jpg" alt="Лимонно-карамельное мороженое" width="267" height="267">
+						<p><span>315 ₽</span>/кг</p>        
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
+						<img src="img/products_round_shape/8_choco-top.jpg" alt="Мороженое с шоколадной стружкой" width="267" height="267">
+						<p><span>320 ₽</span>/кг</p>          
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
+						<img src="img/products_round_shape/9_vanilla_choco.jpg" alt="Ванильное мороженое" width="267" height="267">
+						<p><span>440 ₽</span>/кг</p>
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
+						<img src="img/products_round_shape/10_menthol.jpg" alt="Ментоловое мороженое" width="267" height="267">
+						<p><span>435 ₽</span>/кг</p>    
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
+						<img src="img/products_round_shape/11_oreo.jpg" alt="Мороженое с кусочками черного шоколада" width="267" height="267">
+						<p><span>355 ₽</span>/кг</p>        
+						</li>
+				<li class="filtered-item">
+						<h3><a href="#">Сливочное с мятным сиропом</a></h3>
+						<img src="img/products_round_shape/12_mint.jpg" alt="Мятное мороженое" width="267" height="267">
+						<p><span>420 ₽</span>/кг</p>          
+						</li>
+			 </ul>
+			 <ul class="pagination">
+				<li><p class="pagination-disable">Назад</p></li>
+				<li><p class="pagination-active">1</p></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">Вперёд</a></li>
+			 </ul>
 		</section>
 	</main>
-<footer class="main-footer">
+
+	<footer class="main-footer">
 
 	 <section class="social">
 		<h2 class="visually-hidden">Социальные сети</h2>
 		<ul class="social-list">
-			<li><a class="social-btn" href="#">Facebook</a></li>
-			<li><a class="social-btn" href="#">ВКонтакте</a></li>
-			<li><a class="social-btn" href="#">Instagram</a></li>
-			<li><a class="social-btn" href="#">Twitter</a></li>
+			<li><a class="social-btn" href="#"><span>Facebook
+			<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4 9.4h-3V15h3v3.4h-3V27h-3v-8.7h-3V15h3v-3.5A3.2 3.2 0 0119 8h3v3.4z" fill="#fff" fill-opacity=".8"/></svg>
+		</span></a></li>
+			<li><a class="social-btn" href="#"><span>ВКонтакте
+				<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18.6 16.5c.4 0 .7 0 1-.2.3 0 .5-.3.6-.6l.2-.8c0-.2 0-.4-.2-.7a1 1 0 00-.6-.5 3 3 0 00-1-.1h-2v3h.6l1.4-.1zM20.1 19h-3.5v3.5h2.5c.4 0 .8 0 1.2-.3.3 0 .6-.3.7-.6.2-.2.3-.6.3-.9 0-.3-.1-.7-.3-1-.2-.3-.5-.5-.9-.6z" fill="#fff" fill-opacity=".8"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.5c-.3.6-.6 1-1.1 1.4-.6.4-1.2.7-1.9.8-.8.2-1.6.3-2.5.3H13V11h5.4l2.5.1c.6 0 1.1.3 1.6.5s.9.6 1.2 1.1c.2.5.4 1 .4 1.6a3 3 0 01-.6 1.8c-.4.5-.9.9-1.5 1.1v.1a4 4 0 012.2 1.1c.5.7.8 1.5.8 2.3 0 .6-.1 1.3-.4 1.8z" fill="#fff" fill-opacity=".8"/></svg>
+			</span></a></li>
+			<li><a class="social-btn" href="#"><span>Instagram
+			<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><g fill-opacity=".8" fill="#fff"><path d="M23 18a5 5 0 11-9.9-1.1h-.9v6.8h11.4v-6.8h-.9L23 18z"/><path d="M18 20.7a2.7 2.7 0 100-5.4 2.7 2.7 0 000 5.4zM23.7 12.3h-3v3h3v-3z"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.3 2.3 0 01-2.3 2.3H12.3a2.3 2.3 0 01-2.3-2.3V12.3a2.3 2.3 0 012.3-2.3h11.4a2.3 2.3 0 012.3 2.3v11.4z"/></g></svg>
+		</span></a></li>
+			<li><a class="social-btn" href="#"><span>Twitter<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 12.8c-.3 6.5-3.5 10.8-11 10.7h-.5c-.5 0-4.6-.4-5.4-1.8 1.8.3 3.6-.2 5.1-1.1-1-.3-2.9-.5-3.2-2.9.4.2.8.2 1.3.1-1.3-.8-2.8-1.5-2.7-3.6.4.3 1 .5 1.5.4-.8-.2-2.2-3.2-1-4.8 2 1.8 4 3.5 7.8 3.7.2-2.2 1.2-3.7 3.1-4.3a3.6 3.6 0 014 1.1l2.2-.7a2.2 2.2 0 01-1 1.7 1.8 1.8 0 001.5-.4 2.9 2.9 0 01-1.8 2z" fill="#fff" fill-opacity=".8"/></svg>
+			</span></a></li>
 		</ul>
 		 </section> 
 
 		 <section class="supply">
-			 <h2>Для поставщиков</h2>
+			 <h2><span><svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8 0a4.1 4.1 0 00-3.3 1.7A4.1 4.1 0 004.2 0 4.1 4.1 0 000 4c0 3.2 7.5 9 7.5 9S15 7.2 15 4a4.1 4.1 0 00-4.2-4z" fill="#fff"/></svg></span>
+			 Для поставщиков</h2>
 			 <ul class="supply-list">
-				 <li class="supply-item"><a href="#">О производстве</a></li>
-				 <li class="supply-item"><a href="#">Наши документы</a></li>
-				 <li class="supply-item"><a href="#">Экологические стандарты</a></li>
+				 <li class="supply-item"><a class="link" href="#">О производстве</a></li>
+				 <li class="supply-item"><a class="link" href="#">Наши документы</a></li>
+				 <li class="supply-item"><a class="link" href="#">Экологические стандарты</a></li>
 			 </ul>
 		 </section>
 
 		 <div class="copyright">
-			<a href="htmlacademy.ru"><img src="img/logo/logo-academy.svg" alt="Логотип HTMLacademy" width="108" height="39"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo/logo-academy.svg" alt="Логотип HTMLacademy" width="108" height="39"></a>
 			 <p>Сделано в HTML Academy © 2019</p>
 		 </div>
 	</footer>
