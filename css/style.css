@@ -29,7 +29,7 @@
 /* Fonts */
 
 @font-face{
-	font-family: "Roboto";
+	font-family:	"Roboto";
 	src: local("Roboto"),
 	url("../fonts/roboto.woff2") format("woff2"),
 	url("../fonts/roboto.woff") format("woff");
@@ -65,6 +65,11 @@
 	font-weight: 700;
 	color: var(--basic-white);
 	background-color: var(--basic-turquoise-light);
+
+	min-height: 100%;
+	display:grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 	}
 
 img{
@@ -73,7 +78,7 @@ img{
 }
 
 .visually-hidden{
-	visibility: hidden;
+
 }
 
 .btn{
@@ -104,6 +109,13 @@ img{
 	color: var(--basic-link-hover);
 }
 
+/* Container */
+
+.container{
+width:1146px;
+margin:0 auto;
+}
+
 /* Button */
 
 button{
@@ -112,8 +124,49 @@ button{
 	outline: none;
 }
 
+/* Grid */
+
+.page{
+	height: 100%;
+}
+
+
+/* Main header */
+
+ .main-header{
+ 	display:grid;
+ 	grid-template-rows: auto auto;
+ 	grid-row-gap: 20px;
+}
+/* Logo */
+
+
 
 /* Main-navigation */
+
+.main-navigation{ 
+	display:grid;
+	grid-template-columns: auto 1fr auto;
+}
+
+.site-navigation{
+	margin: 0px;
+	padding-left:24px;
+}
+
+.user-navigation {
+		margin: 0;
+		padding: 0;
+}
+
+.navigation-contacts{
+ justify-self:end;
+}
+
+.navigation-contacts p{
+	margin: 0;
+	padding: 0;
+}
 
 .site-navigation,
 .dropdown-list,
@@ -157,6 +210,7 @@ button{
 }
 
 .dropdown-list{
+	display:none;
 	background: var(--basic-white);
 
 	width:143px;
@@ -213,6 +267,10 @@ button{
 
 /* Promotion */
 
+.promotion{
+	margin-bottom: 50px;
+}
+
 .slider{
 	text-align: center;
 }
@@ -233,8 +291,27 @@ button{
 
 /* Offer */
 
+.offer{
+	margin-bottom: 40px;
+}
+
 .offer-list{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 26px;
+
+	margin:0;
+	padding:0;
+
 	list-style:none;
+}
+
+.offer-item{
+	width:560px;
+	height: 229px;
+	border-radius: 16px;
+
+	padding-left: 16px;
 }
 
 .offer-item h3{
@@ -245,6 +322,8 @@ button{
 .offer-item p{
 	font-size: 18px;
 	
+	padding-right: 30px;
+	
 }
 
 .offer-item a{
@@ -252,15 +331,10 @@ button{
 	line-height: 24px;
 }
 
-.offer-item{
-	width:560px;
-	height: 229px;
-	border-radius: 16px;
-}
+
 
 .offer-item-left{
 	background: url(../img/raspberry_background.jpg) no-repeat;
-
 }
 	
 .offer-item-right{
@@ -269,8 +343,18 @@ button{
 
 /* Hits */
 
-.hits-list{
+.hits{
+	margin-bottom:40px;
+}
+
+.hits-list{	 
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 26px;
 	list-style: none;
+
+	margin: 0px;
+ 	padding:0px;
 }
 
 .hits img{
@@ -282,6 +366,7 @@ button{
 	color: var(--basic-white);
 	font-weight: 500;
 	text-decoration: none;
+
 	border-bottom:1px solid var(--transparent-white);
 }
 
@@ -289,19 +374,22 @@ button{
 	font-size: 30px;
 	line-height: 35px;
 
+	margin: 0;
+	padding: 0;
 }
 
 .hits-item span{
 	font-size: 45px;
-	line-height: 45px;
+	line-height: 45px;	
 }
 
 /* About */
 
 .about{
-
 	background: url("../img/pattern.jpg") repeat;
 	border-radius:16px;
+
+	margin-bottom: 40px;
 }
 
 .about-text{
@@ -320,14 +408,19 @@ button{
 
 /* Blog */
 
+.index-column{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 26px;
+}
+
 .blog{
-	width: 560px;
-	height:220px;
 	background: url("../img/strawberry_background.jpg") no-repeat;
 	border-radius: 16px;
+	padding-left: 20px;
 }
-.blog p{
 
+.blog p{
 	font-weight: 500;
 	color: var(--basic-dark);
 }
@@ -336,36 +429,45 @@ button{
 	color: var(--basic-dark);
 	font-size: 24px;
 	line-height: 30px;
+
+	padding-left: 
 }
+
 .blog-title a:hover{
 	color:var(--basic-orange);
 }
 
 /* Mailing */
 
-.mailing-wrapper{
-
-	width: 548px;
-	height:210px;
-	border-radius:16px;
+.mailing{
 	background: var(--basic-light);
-
 	border:8px solid white;
 	border-image: url("../img/mail_background.png") 10 round round;
-	
+	border-radius:16px;
+
+	padding-left: 20px;
 }
 
 .mailing-info{
+
 	color: var(--basic-dark-medium);
 	font-weight: 400;
+
 }
+/* Location */
+
 
 /* Contacts */
 
 .contacts{
+	width: 303px;
+	height: 306px;
+
 	font-size: 14px;
 	line-height: 20px;
 	font-weight:400;
+
+	border-radius: 16px;
 
 	color: var(--basic-dark);
 	background-color: var(--basic-white);
@@ -385,6 +487,7 @@ button{
 .contacts-phone:hover{
 	color: var(--basic-orange);
 }
+
 .btn-contacts{
 
 	font-size:18px;
@@ -394,7 +497,18 @@ button{
 
 /* Main-footer */
 
+.main-footer{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  grid-column-gap: 26px;
+
+
+}
+
 .social-list{
+	margin:0;
+	padding:0;
+
 	list-style:none;
 }
 
@@ -402,6 +516,7 @@ button{
 	fill-opacity:1;
 
 }
+
 .supply h2{
 
 	font-size: 13px;
@@ -409,6 +524,9 @@ button{
 }
 
 .supply-list{
+		margin:0;
+		padding:0;
+
 	list-style: none;
 }
 .social-btn{
@@ -424,6 +542,7 @@ button{
 }
 
 .copyright p{
+
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
