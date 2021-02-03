@@ -679,16 +679,28 @@ h1{
 /* Filters */
 
 .filters{
-		margin-bottom: 40px;
+	margin-bottom: 40px;
+
 }
 
 .filter-form{
 	display:grid;
-	grid-template-columns: repeat(3, min-content);
-	grid-template-rows: min-content min-content;
-	grid-row-gap: 14px;
+	grid-template-columns:repeat(3, auto);
+	width:869px;
 }
 
+.filter-filler{
+	
+}
+.filter-radio{
+	display: flex;
+	
+}
+
+.filter-checkbox{
+	display: flex;
+	
+}
 .filter-form legend{
 	font-size:14px;
 	line-height: 16px;
@@ -707,6 +719,8 @@ h1{
 
 .filter-form ul{
 	list-style:none;
+	margin:0;
+	padding: 0;
 }
 
 .select-filter{
@@ -722,6 +736,7 @@ h1{
 }
 
 .filter-button{
+	
 	font:inherit;
 	color:var(--basic-white);
 	background: var(--transparent-white);

@@ -47,7 +47,7 @@
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
 			<form class="filter-form" action="#" method="get">
-				<fieldset>
+				<fieldset class="filter-sort">
 					<legend>Сортировка:</legend>
 					<select class="select-filter" name="sorting" id="sorting">
 						<option value="popular">по популярности</option>
@@ -56,11 +56,11 @@
 						<option value="fat-percentage">по жирности</option>
 					</select>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-price">
 					<legend>Цена: 100 ₽ – 500 ₽</legend>
 					<input type="range" class="price-filter"  min="100" max="500" step="5" value="300">
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-fat">
 					<legend>Жирность:</legend>
 					<ul class="filter-radio">
 						<li class="">
@@ -81,7 +81,7 @@
 						</li>
 					</ul>
 				</fieldset>	
-				<fieldset>
+				<fieldset class="filter-filler">
 					<legend>Наполнители:</legend>
 					<ul class="filter-checkbox">
 						<li>
