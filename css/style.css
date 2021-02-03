@@ -456,10 +456,14 @@ button{
 }
 /* Location */
 
+.location{
+	text-align: center;
+}
 
 /* Contacts */
 
 .contacts{
+	margin:0 auto;
 	width: 303px;
 	height: 306px;
 
