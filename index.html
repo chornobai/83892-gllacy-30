@@ -13,8 +13,7 @@
 
 <body class="page-body">
 
-	<header class="main-header"> 
-		<div class="container">	
+	<header class="main-header container container-header"> 
 		<nav class="main-navigation">
 			<a class="header-logo"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
 			<ul class="site-navigation">
@@ -80,12 +79,12 @@
 				<li class="offer-item offer-item-left">
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="btn" href="#">Хочу варенье!</a>
-				</li>
+					<a class="btn btn-offer" href="#">Хочу варенье!</a>
+					</li>
 				<li class="offer-item offer-item-right">
 					<h3>Шоколадки даром!</h3>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="btn" href="#">Хочу шоколадки!</a>
+					<a class="btn btn-offer" href="#">Хочу шоколадки!</a>
 				</li>
 			</ul>
 		</section>
@@ -113,7 +112,7 @@
 					<img src="img/products_round_shape/4_creme-brulee.jpg" alt="Мороженое крем-брюле" width="267" height="267">
 					<p><span>415 ₽</span>/кг</p>          
 				</li>
-			</ul>
+							</ul>
 		</section>
 
 		<section class="about" id="about">
@@ -121,12 +120,12 @@
 			<p class="about-text">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 			<ul class="about-list">
 				<li class="about-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
-				<li class="about-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
 				<li class="about-item"><p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
+				<li class="about-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
 				<li class="about-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
 			</ul>
 		</section>
-		<div class="index-column">
+			<div class="index-column">
 			<section class="blog">
 				<h2 class="visually-hidden">Блог</h2>
 				<p>Новое в нашем блоге</p>
@@ -139,27 +138,29 @@
 				<h2 class="visually-hidden">Рассылка</h2>
 					<p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =).</p>
 					<form class="mailing-form" action="#" method="post">
-						<label for="email"><input class="input-style"  type="email" id="email" name="mail" placeholder="email@example.com"></label>
+						<label for="email"></label>
+						<input class="input-style mailing-input"  type="email" id="email" name="mail" placeholder="email@example.com">
 						<button class="btn" type="submit">Отправить</button>
 					</form>
-				
-			</section>
+				</section>
+			</div>
 		</div>
-	</div>
 		<section class="location">
-			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="container-location">
+			<h2 class="visually-hidden">Как нас найти</h2>	
 			<img src="img/map.png" alt="Указатель месторасположения на карте" width="1200" height="430">
 
 			<section class="contacts">
 				<h2 class="visually-hidden">Контактная информация</h2>
-				<p>Адрес главного офиса и офлайн-магазина:<br>
+				<p class="contacts-adress">Адрес главного офиса <br>и офлайн-магазина:<br>
 					<b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
-					<p>Для заказов по телефону:<br>
+					<p class="contacts-phone-title">Для заказов по телефону:<br>
 						<a class="link contacts-phone" href="tel:88124502525"><b>8 812 450-25-25</b></a><br>
 						(с 10 до 20 ежедневно)
 					</p>
 					<a  class="btn btn-contacts" href="#">Форма обратной связи</a>
 				</section>
+				</div>
 			</section>
 		</main>
 
@@ -183,12 +184,13 @@
 			</section> 
 
 			<section class="supply">
-				<h2><span><svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8 0a4.1 4.1 0 00-3.3 1.7A4.1 4.1 0 004.2 0 4.1 4.1 0 000 4c0 3.2 7.5 9 7.5 9S15 7.2 15 4a4.1 4.1 0 00-4.2-4z" fill="#fff"/></svg></span>
+				<h2 class="visually-hidden">
 				Для поставщиков</h2>
 				<ul class="supply-list">
-					<li class="supply-item"><a class="link" href="#">О производстве</a></li>
-					<li class="supply-item"><a class="link" href="#">Наши документы</a></li>
-					<li class="supply-item"><a class="link" href="#">Экологические стандарты</a></li>
+					<li class="supply-item"><a class="link link-special" href="#">Для поставщиков</a></li>
+					<li class="supply-item"><a class="supply-link link" href="#">О производстве</a></li>
+					<li class="supply-item"><a class="supply-link link" href="#">Наши документы</a></li>
+					<li class="supply-item"><a class="supply-link link" href="#">Экологические стандарты</a></li>
 				</ul>
 			</section>
 
@@ -201,18 +203,22 @@
 		<section class="modal modal-login">
 			<h2 class="visually-hidden">Личный кабинет</h2>
 			<form class="login-form" action="#" method="post">
-				<p>
+				<ul class="login-list">
+					<li class="login-item">
 					<label for="login-login"></label>
 					<input class="input-style" type="email" id="login-login" name="login" placeholder="email@example.com">
-				</p>
-				<p>
+					</li>
+					<li class="login-item">
 					<label for="login-password"></label>
 					<input class="input-style" type="password" id="login-password" name="password" placeholder="......">
-				</p>
-				<button class="btn btn-login" type="submit">Войти</button>
+					</li>
+				</ul>
+				<div class="restore">
+					<button class="btn btn-login" type="submit">Войти</button>
 				<div class="link-modal-login">
 					<a  href="#">Забыли пароль?</a>
 					<a  href="#">Новая регистрация</a>
+				</div>
 				</div>
 			</form>
 		</section>
@@ -220,8 +226,8 @@
 		<section class="modal modal-search">
 			<h2 class="visually-hidden">Поиск</h2>
 			<form class="search-form" action="#"  method="post">
-				<label for="search"></label>
-				<input class="input-style" type="text" id="search" name="search" placeholder="Крем-брюле">
+				<label for="search">
+				<input class="input-style" type="text" id="search" name="search" placeholder="Крем-брюле"></label>
 			</form>
 		</section>
 
@@ -242,6 +248,7 @@
 					</p>
 					<button class="btn feedback-btn" type="submit">Отправить</button>
 				</form>
+				<button class="feedback-close" type="button">Закрыть</button>
 			</section>
 		</body>
 		</html>
