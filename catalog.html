@@ -61,7 +61,7 @@
 <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="#fff"/>
 <path class="color-basket" d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="none"/>
 </svg>
-</span><span>2 товара</span></a>
+</span><span><span>2</span>товара</span></a>
 <section class="modal modal-basket">
 				<h2 class="visually-hidden">Корзина</h2>
 					<ul class="basket-list">
@@ -72,7 +72,7 @@
 							<p class="count">1,5 кг х <span>200 руб.</span></p>
 							<p class="price">300 руб.</p>
 						</li>
-						<li class="basket-item">
+						<li class="basket-item strawberry-item">
 							<button class="delete-item"></button>
 							<img src="img/basket-strawberry-ice.png" alt="Клубничный пломбир с белым шоколадом" width="33" height="33">
 							<h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
@@ -100,18 +100,20 @@
 			<li><a class="link" href="#">Каталог</a></li>
 			<li class="breadcrumbs-current">Сливочное</li>
 		</ul>
-		
+				
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
 			<form class="filter-form" action="#" method="get">
 				<fieldset class="filter-sort">
 					<legend>Сортировка:</legend>
+					<div class="select-wrapper-arrow">
 						<select class="select-filter" name="sorting" id="sorting">
 						<option value="popular">по популярности</option>
 						<option value="expensive-first">сначала недорогие</option>
 						<option value="cheep-first">сначала дорогие</option>
 						<option value="fat-percentage">по жирности</option>
 					</select>
+				</div>
 				</fieldset>
 
 				<fieldset class="filter-price">
@@ -132,19 +134,19 @@
 					<legend>Жирность:</legend>
 					<ul class="filter-radio">
 						<li class="filter-radio-item">
-							<input class="visually-hidden filter-input-radio" type="radio" id="zero" name="zero" disabled>
+							<input class="visually-hidden filter-input-radio" type="radio" id="zero" name="fat-group" disabled>
 							<label for="zero">0%</label>
 						</li>
 						<li class="filter-radio-item">
-							<input class="visually-hidden filter-input-radio" type="radio" id="ten" name="ten" checked>
+							<input class="visually-hidden filter-input-radio" type="radio" id="ten" name="fat-group" checked>
 							<label for="ten">до 10%</label>
 						</li>
 						<li class="filter-radio-item">
-							<input class="visually-hidden filter-input-radio" type="radio" id="thirty" name="thirty">
+							<input class="visually-hidden filter-input-radio" type="radio" id="thirty" name="fat-group">
 							<label for="thirty">до 30%</label>
 						</li>
 						<li class="filter-radio-item">
-							<input class="visually-hidden filter-input-radio" type="radio" id="up-thirty" name="up-thirty">
+							<input class="visually-hidden filter-input-radio" type="radio" id="up-thirty" name="fat-group">
 							<label for="up-thirty">выше 30%</label>
 						</li>
 					</ul>
@@ -251,9 +253,8 @@
 					<h3><a href="#">Сливочное с мятным сиропом</a></h3>
 					<img src="img/products_round_shape/12_mint.jpg" alt="Мятное мороженое" width="267" height="267">
 					<p><span>420 ₽</span>/кг</p> 
-
+					<div class="hover-look"><a href="#" class="btn btn-quick-look">Быстрый просмотр</a></div>
 				</li>
-
 			</ul>
 			<ul class="pagination">
 				<li class="pagination-item pagination-disable"><a class="pagination-arrow-left" href="#"></a></li>
@@ -290,9 +291,9 @@
 				<h2 class="visually-hidden">
 				Для поставщиков</h2>
 				<ul class="supply-list">
-					<li class="supply-item icon-heart"><a class="link link-special" href="#">Для поставщиков</a></li>
-					<li class="supply-item"><a class="supply-link link" href="#">О производстве</a></li>
+					<li class="supply-item"><a class="link link-special" href="#">Для поставщиков</a></li>
 					<li class="supply-item"><a class="supply-link link" href="#">Наши документы</a></li>
+					<li class="supply-item"><a class="supply-link link" href="#">О производстве</a></li>
 					<li class="supply-item"><a class="supply-link link" href="#">Экологические стандарты</a></li>
 				</ul>
 			</section>
