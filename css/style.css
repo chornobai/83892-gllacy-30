@@ -865,6 +865,9 @@ background: url("../img/icons/icon_leaf.svg")no-repeat 0 0;
 	background: url("../img/icons/icon_pin.svg")no-repeat 0 0;
 
 }
+.location iframe{
+	border:none;
+}
 
 /* Contacts */
 
@@ -1143,16 +1146,19 @@ margin-right: 18px;
 
 .modal-feedback{
 	display: none;
+	position: fixed;
+  top: -2089px;
+ 	left:713px;
 	max-width: 477px;
 	position: relative;
 	box-sizing: border-box;
-	padding:20px 25px;
+	padding:16px 25px 25px 25px;
 
 }
 
 .feedback-description{
 	margin:0;
-	margin-bottom:26px;
+	margin-bottom:19px;
 
 	font-size: 24px;
 	line-height: 28px;
@@ -1169,13 +1175,13 @@ margin-right: 18px;
 	font-size: 16px;
 	line-height: 20px;
 
-	padding: 16px 0 16px 14px;
+	padding: 13px 0 10px 14px;
 }
 .feedback-form .textarea-style{
 	width:100%;
 	max-height: 154px;
 	box-sizing: border-box;
-	padding: 16px 0 0 14px;
+	padding: 10px 0 0 14px;
 }
 .feedback-btn{
 	text-align: right;
@@ -1185,7 +1191,7 @@ margin-right: 18px;
 	line-height: 24px;
 	text-shadow: 0px 2px 5px var(--shadow-text-red);
 
-	padding:13px 24px;
+	padding:10px 24px;
 }
 
 .feedback-close{
