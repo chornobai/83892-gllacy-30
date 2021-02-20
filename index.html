@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Глейси - главная страница</title>	
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -17,7 +17,7 @@
 		<nav class="main-navigation">
 			<a class="header-logo"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
 			<ul class="site-navigation">
-				<li class="dropdown"><a class="navigation-link navigation-catalog " href="catalog.html">Каталог</a>
+				<li class="dropdown"><a class="navigation-link navigation-catalog" href="catalog.html">Каталог</a>
 					<ul class="dropdown-list">
 						<li class="dropdown-item dropdown-underline"><a class="dropdown-link dropdown-active" href="#">Новинки</a></li>
 						<li class="dropdown-item"><a class="dropdown-link" href="catalog.html">Сливочное</a></li>
@@ -30,24 +30,24 @@
 				<li><a class="navigation-link" href="#about">О компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="user-search"><a href="#" class="user-link search-link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707981 2.86363 0.715966 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46227 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="white"/>
-</svg></a>
-					<form class="modal search-form" action="#"  method="post">
-					<label for="search">
+				<li class="user-search"><a href="#" class="user-link search-link" aria-label="Поиск"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707981 2.86363 0.715966 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46227 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="white"/>
+				</svg></a>
+					<form class="modal search-form" action="https://echo.htmlacademy.ru"  method="get">
+					<label for="search" aria-label="Поле поиска">
 					<input class="input-style" type="text" id="search" name="search" placeholder="Крем-брюле"></label>
 					</form>
 				</li>
-				<li class="user-login"><a href="#" class="user-link link-user"><span><svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 14.9l7-5.4-7-5.4v3H0V12h6v2.9z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg></span><span>Вход</span></a>
-					<form class="modal login-form" action="#" method="post">
+				<li class="user-login"><a href="#" class="user-link link-user" aria-label="Личный кабинет"><svg aria-hidden="true" focusable="false" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 14.9l7-5.4-7-5.4v3H0V12h6v2.9z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a>
+					<form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
 						<ul class="login-list">
 							<li class="login-item">
-								<label for="login-login"></label>
+								<label for="login-login" aria-label="Поле для ввода электронной почты"></label>
 								<input class="input-style" type="email" id="login-login" name="login" placeholder="email@example.com">
 								</li>
 							<li class="login-item">
-								<label for="login-password"></label>
-								<input class="input-style" type="password" id="login-password" name="password" placeholder="......">
+								<label for="login-password" aria-label="Поле для ввода пароля"></label>
+								<input class="input-style" type="password" id="login-password" name="password" placeholder="••••••">
 								</li>
 						</ul>
 						<div class="restore">
@@ -59,18 +59,18 @@
 						</div>
 					</form>
 				</li>
-				<li class="user-basket"><a href="#" class="user-link basket-link"><span><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="#fff"/>
-<path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="#fff"/>
-<path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="#fff"/>
-<path class="color-basket" d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="none"/>
-</svg>
-</span><span>Пусто</span></a></li>
+				<li class="user-basket"><a href="#" class="user-link basket-link"><svg aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="#fff"/>
+					<path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="#fff"/>
+					<path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="#fff"/>
+					<path class="color-basket" d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="none"/>
+					</svg>
+					<span class="visually-hidden">Корзина</span><span>Пусто</span></a></li>
 			</ul>
 		</nav>
 		<div class="navigation-contacts">
 			<p>c 10 до 20, ежедневно</p>
-			<a class="link header-phone" href="tel:88124502525">8 812 450-25-25</a>
+			<a class="link header-phone" href="tel:88124502525" aria-label="Номер телефона Глейси">8 812 450-25-25</a>
 		</div>
 	</header>
 
@@ -172,8 +172,8 @@
 				<div class="mailing-content">
 				<h2 class="visually-hidden">Рассылка</h2>
 					<p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =).</p>
-					<form class="mailing-form" action="#" method="post">
-						<label for="email"></label>
+					<form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
+						<label for="email" aria-label="Поле ввода для электоронной почты"></label>
 						<input class="input-style mailing-input"  type="email" id="email" name="mail" placeholder="email@example.com">
 						<button class="btn" type="submit">Отправить</button>
 					</form>
@@ -191,7 +191,7 @@
 				<p class="contacts-adress">Адрес главного офиса <br>и офлайн-магазина:<br>
 					<b>ул. Большая Конюшенная, <br>19/8, Санкт-Петербург</b></p>
 					<p class="contacts-phone-title">Для заказов по телефону:<br>
-						<a class="link contacts-phone" href="tel:88124502525"><b>8 812 450-25-25</b></a><br>
+						<a class="link contacts-phone" href="tel:88124502525" arial-label="Номер для заказов"><b>8 812 450-25-25</b></a><br>
 						(с 10 до 20 ежедневно)
 					</p>
 					<a  class="btn btn-contacts" href="#">Форма обратной связи</a>
@@ -205,17 +205,17 @@
 			<section class="social">
 				<h2 class="visually-hidden">Социальные сети</h2>
 				<ul class="social-list">
-					<li><a class="social-btn" href="#"><span>Facebook
-						<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4 9.4h-3V15h3v3.4h-3V27h-3v-8.7h-3V15h3v-3.5A3.2 3.2 0 0119 8h3v3.4z" fill="#fff" fill-opacity=".8"/></svg>
-					</span></a></li>
-					<li><a class="social-btn" href="#"><span>ВКонтакте
-						<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18.6 16.5c.4 0 .7 0 1-.2.3 0 .5-.3.6-.6l.2-.8c0-.2 0-.4-.2-.7a1 1 0 00-.6-.5 3 3 0 00-1-.1h-2v3h.6l1.4-.1zM20.1 19h-3.5v3.5h2.5c.4 0 .8 0 1.2-.3.3 0 .6-.3.7-.6.2-.2.3-.6.3-.9 0-.3-.1-.7-.3-1-.2-.3-.5-.5-.9-.6z" fill="#fff" fill-opacity=".8"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.5c-.3.6-.6 1-1.1 1.4-.6.4-1.2.7-1.9.8-.8.2-1.6.3-2.5.3H13V11h5.4l2.5.1c.6 0 1.1.3 1.6.5s.9.6 1.2 1.1c.2.5.4 1 .4 1.6a3 3 0 01-.6 1.8c-.4.5-.9.9-1.5 1.1v.1a4 4 0 012.2 1.1c.5.7.8 1.5.8 2.3 0 .6-.1 1.3-.4 1.8z" fill="#fff" fill-opacity=".8"/></svg>
-					</span></a></li>
-					<li><a class="social-btn" href="#"><span>Instagram
-						<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><g fill-opacity=".8" fill="#fff"><path d="M23 18a5 5 0 11-9.9-1.1h-.9v6.8h11.4v-6.8h-.9L23 18z"/><path d="M18 20.7a2.7 2.7 0 100-5.4 2.7 2.7 0 000 5.4zM23.7 12.3h-3v3h3v-3z"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.3 2.3 0 01-2.3 2.3H12.3a2.3 2.3 0 01-2.3-2.3V12.3a2.3 2.3 0 012.3-2.3h11.4a2.3 2.3 0 012.3 2.3v11.4z"/></g></svg>
-					</span></a></li>
-					<li><a class="social-btn" href="#"><span>Twitter<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 12.8c-.3 6.5-3.5 10.8-11 10.7h-.5c-.5 0-4.6-.4-5.4-1.8 1.8.3 3.6-.2 5.1-1.1-1-.3-2.9-.5-3.2-2.9.4.2.8.2 1.3.1-1.3-.8-2.8-1.5-2.7-3.6.4.3 1 .5 1.5.4-.8-.2-2.2-3.2-1-4.8 2 1.8 4 3.5 7.8 3.7.2-2.2 1.2-3.7 3.1-4.3a3.6 3.6 0 014 1.1l2.2-.7a2.2 2.2 0 01-1 1.7 1.8 1.8 0 001.5-.4 2.9 2.9 0 01-1.8 2z" fill="#fff" fill-opacity=".8"/></svg>
-					</span></a></li>
+					<li><a class="social-btn" href="#" aria-label="Фейсбук">
+						<svg aria-hidden="true" focusable="false" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4 9.4h-3V15h3v3.4h-3V27h-3v-8.7h-3V15h3v-3.5A3.2 3.2 0 0119 8h3v3.4z" fill="#fff" fill-opacity=".8"/></svg>
+					</a></li>
+					<li><a class="social-btn" href="#"  aria-label="ВКонтакте">
+						<svg aria-hidden="true" focusable="false" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18.6 16.5c.4 0 .7 0 1-.2.3 0 .5-.3.6-.6l.2-.8c0-.2 0-.4-.2-.7a1 1 0 00-.6-.5 3 3 0 00-1-.1h-2v3h.6l1.4-.1zM20.1 19h-3.5v3.5h2.5c.4 0 .8 0 1.2-.3.3 0 .6-.3.7-.6.2-.2.3-.6.3-.9 0-.3-.1-.7-.3-1-.2-.3-.5-.5-.9-.6z" fill="#fff" fill-opacity=".8"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.5c-.3.6-.6 1-1.1 1.4-.6.4-1.2.7-1.9.8-.8.2-1.6.3-2.5.3H13V11h5.4l2.5.1c.6 0 1.1.3 1.6.5s.9.6 1.2 1.1c.2.5.4 1 .4 1.6a3 3 0 01-.6 1.8c-.4.5-.9.9-1.5 1.1v.1a4 4 0 012.2 1.1c.5.7.8 1.5.8 2.3 0 .6-.1 1.3-.4 1.8z" fill="#fff" fill-opacity=".8"/></svg>
+					</a></li>
+					<li><a class="social-btn" href="#" aria-label="Instagram">
+						<svg aria-hidden="true" focusable="false" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><g fill-opacity=".8" fill="#fff"><path d="M23 18a5 5 0 11-9.9-1.1h-.9v6.8h11.4v-6.8h-.9L23 18z"/><path d="M18 20.7a2.7 2.7 0 100-5.4 2.7 2.7 0 000 5.4zM23.7 12.3h-3v3h3v-3z"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.3 2.3 0 01-2.3 2.3H12.3a2.3 2.3 0 01-2.3-2.3V12.3a2.3 2.3 0 012.3-2.3h11.4a2.3 2.3 0 012.3 2.3v11.4z"/></g></svg>
+					</a></li>
+					<li><a class="social-btn" href="#"  aria-label="Twitter"><svg aria-hidden="true" focusable="false" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 12.8c-.3 6.5-3.5 10.8-11 10.7h-.5c-.5 0-4.6-.4-5.4-1.8 1.8.3 3.6-.2 5.1-1.1-1-.3-2.9-.5-3.2-2.9.4.2.8.2 1.3.1-1.3-.8-2.8-1.5-2.7-3.6.4.3 1 .5 1.5.4-.8-.2-2.2-3.2-1-4.8 2 1.8 4 3.5 7.8 3.7.2-2.2 1.2-3.7 3.1-4.3a3.6 3.6 0 014 1.1l2.2-.7a2.2 2.2 0 01-1 1.7 1.8 1.8 0 001.5-.4 2.9 2.9 0 01-1.8 2z" fill="#fff" fill-opacity=".8"/></svg>
+					</a></li>
 				</ul>
 			</section> 
 
