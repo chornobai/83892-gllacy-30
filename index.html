@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Глейси - главная страница</title>	
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -18,6 +18,7 @@
 			<a class="header-logo"><img src="img/logo/logo.svg" alt="GllacyShop - логотип сайта" width="154" height="64"></a>
 			<ul class="site-navigation">
 				<li class="dropdown"><a class="navigation-link navigation-catalog" href="catalog.html">Каталог</a>
+					<div class="dropdown-container">
 					<ul class="dropdown-list">
 						<li class="dropdown-item dropdown-underline"><a class="dropdown-link dropdown-active" href="#">Новинки</a></li>
 						<li class="dropdown-item"><a class="dropdown-link" href="catalog.html">Сливочное</a></li>
@@ -25,6 +26,7 @@
 						<li class="dropdown-item"><a class="dropdown-link" href="#">Фруктовый лед</a></li>
 						<li class="dropdown-item"><a class="dropdown-link" href="#">Мелорин</a></li>
 					</ul>
+					</div>
 				</li>
 				<li><a class="navigation-link" href="#">Доставка и оплата</a></li>
 				<li><a class="navigation-link" href="#about">О компании</a></li>
@@ -33,12 +35,15 @@
 				<li class="user-search"><a href="#" class="user-link search-link" aria-label="Поиск"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707981 2.86363 0.715966 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46227 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="white"/>
 				</svg></a>
+				<div class="search-dropdown">
 					<form class="popup search-form" action="https://echo.htmlacademy.ru"  method="get">
 					<label for="search" aria-label="Поле поиска">
 					<input class="input-style" type="text" id="search" name="search" placeholder="Крем-брюле"></label>
 					</form>
+				</div>
 				</li>
 				<li class="user-login"><a href="#" class="user-link link-user" aria-label="Личный кабинет"><svg aria-hidden="true" focusable="false" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 14.9l7-5.4-7-5.4v3H0V12h6v2.9z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a>
+					<div class="login-dropdown">
 					<form class="popup login-form" action="https://echo.htmlacademy.ru" method="post">
 						<ul class="login-list">
 							<li class="login-item">
@@ -58,6 +63,7 @@
 						</div>
 						</div>
 					</form>
+				</div>
 				</li>
 				<li class="user-basket"><a href="#" class="user-link basket-link"><svg aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="#fff"/>
@@ -95,9 +101,9 @@
 				</li>
 			</ul>
 			<div class="slider-controls">
-				<button class="controls-btn" type="button" aria-label="Первый слайд"></button>
-				<button class="controls-btn" type="button" aria-label="Второй слайд"></button>
-				<button class="controls-btn" type="button" aria-label="Третий слайд"></button>
+				<button class="current controls-btn  first-slide " type="button" aria-label="Первый слайд"></button>
+				<button class="controls-btn second-slide" type="button" aria-label="Второй слайд"></button>
+				<button class="controls-btn third-slide" type="button" aria-label="Третий слайд"></button>
 			</div>
 			 
 		</section>
@@ -184,8 +190,7 @@
 		<section class="location">
 			<div class="container-location">
 			<h2 class="visually-hidden">Как нас найти</h2>	
-			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="100%" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
 			<section class="contacts">
 				<h2 class="visually-hidden">Контактная информация</h2>
 				<p class="contacts-adress">Адрес главного офиса <br>и офлайн-магазина:<br>
@@ -258,8 +263,8 @@
 				</form>
 				<button class="feedback-close" type="button" area-label="Закрыть"></button>
 			</section>
-			<script src="js/modal.js"></script>
-			<script src="js/slider.js"></script>
+			<script src="js/modal.min.js"></script>
+			<script src="js/slider.min.js"></script>
 		</body>
 		</html>
 		

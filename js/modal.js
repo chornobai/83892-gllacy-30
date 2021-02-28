@@ -40,6 +40,7 @@ feedbackClose.addEventListener("click", function(evt){
 });
 
 // Проверка валидности формы, добавление анимации, запись в LocalStorage // 
+
 formFeedback.addEventListener("submit", function (evt){
 	if (!feedbackNameField.value || !feedbackEmailField.value || !feedbackTextareaField.value){
 	evt.preventDefault();
@@ -54,6 +55,7 @@ formFeedback.addEventListener("submit", function (evt){
 	}
 })
 // Закрытие модального окна клавишей ESC //
+
 window.addEventListener("keydown", function(evt){
 	if(evt.keyCode === 27){
 		if(feedbackForm.classList.contains("modal-show")){
