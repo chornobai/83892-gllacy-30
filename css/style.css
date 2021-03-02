@@ -573,6 +573,7 @@ button {
 
 .slider-button {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 16px;
   font-size: 32px;
   line-height: 44px;
@@ -1366,8 +1367,7 @@ button {
   right: 16px;
   width: 18px;
   height: 17px;
-  background-color: transparent;
-  background-image: url('../img/arrows/x-big.svg');
+  background:transparent url('../img/icons/big_x.svg') no-repeat;
 }
 
 .modal-close {
@@ -1444,7 +1444,7 @@ button {
 }
 
 .delete-item {
-  background: transparent url(../img/icons/icon_x.svg)no-repeat;
+  background: transparent url(../img/icons/small_x.svg)no-repeat;
   width: 11px;
   height: 11px;
   margin-right: 9px;
